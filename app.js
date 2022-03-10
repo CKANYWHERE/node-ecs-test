@@ -6,6 +6,12 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/test", (req, res) => {
+    res.json({
+        message: 'Build SUCCESS'
+    });
+})
+
 app.listen(4000, () => {
     console.log("Server started");
 });
